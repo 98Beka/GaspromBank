@@ -575,23 +575,23 @@ namespace Gb
 
         private void button8_Click(object sender, EventArgs e)
         {
-           File.WriteAllText("fin.txt", "");
-            /* 
+            File.WriteAllText("fin.txt", "");
+
             Thread myThread = new Thread(new ThreadStart(final));
             myThread.Start(); // запускаем поток  
             textBox5.Text = "";
-            timer5.Start();*/
-
-            /* }
+            timer5.Start();
 
 
-             private void final()
-             {*/
 
-          
+        }
+        private void final()
+        {
+
+
             int tmi = 0;
 
-           while (true)
+            while (true)
             {
                 try
                 {
@@ -601,107 +601,97 @@ namespace Gb
                 catch (Exception) { break; }
             }
             tmi--;
-            int tempj = 0 ;
+            int tempj = 0;
 
 
             while (tempj++ < tmi - 1)
             {
                 string[] a = File.ReadAllLines(tempj.ToString() + ".txt");
 
-               
-                string[] b = File.ReadAllLines((tempj + 1).ToString() + ".txt");           
+
+                string[] b = File.ReadAllLines((tempj + 1).ToString() + ".txt");
                 int ai = 0;
                 int bi = 0;
                 char[] arr_a;
                 char[] arr_b;
                 foreach (string fstl in a)
                 {
-                   
+
 
                     arr_a = fstl.ToCharArray();
                     int ii = 0;
-                    while(ii < arr_a.Length) //get num
-                    { 
+                    while (ii < arr_a.Length) //get num
+                    {
                         if (arr_a[ii] > '0' && arr_a[ii] < '9')
                         {
-                            ai = (int)(arr_a[0] - '0');
-                            textBox5.Text = textBox5.Text + ai.ToString() + '\n';
 
-
-                            /* int k = 0;
-                             while (k < arr_a.Length - 1)
-                             {
-                                 arr_a[k] = arr_a[k + 1];
-                                 k++;
-                             }*/
+                            ai = ai * 10 + arr_a[ii];
+                            int k = 0;
+                            while (k < arr_a.Length - 1)
+                            {
+                                arr_a[k] = arr_a[k + 1];
+                                k++;
+                            }
 
 
                         }
                         ii++;
 
                     }
-                   
 
 
+                    foreach (string secl in b)
+                    {
+                        arr_b = secl.ToCharArray();
+                        ii = 0;
+                        while (ii < arr_b.Length) //get num
+                        {
+                            if (arr_b[ii] > '0' && arr_b[ii] < '9')
+                            {
+                                bi = bi * 10 + arr_b[ii];
+                                int k = 0;
+                                while (k < arr_b.Length - 1)
+                                {
+                                    arr_b[k] = arr_b[k + 1];
+                                    k++;
+                                }
 
-                    /* foreach (string secl in b)
-                     {
-                         arr_b = secl.ToCharArray();
-                         ii = 0;
-                         while (ii < arr_b.Length) //get num
-                         {
-                             if (arr_b[ii] > '0' && arr_b[ii] < '9')
-                             {
-                                 bi = bi * 10 + Convert.ToInt32(arr_b[ii]);
-                                 int k = 0;
-                                 while (k < arr_b.Length - 1)
-                                 {
-                                     arr_b[k] = arr_b[k + 1];
-                                     k++;
-                                 }
+                            }
 
-                             }
+                        }
 
-                         }
-
-                         if (arr_a == arr_b) //clean if like
-                         {
-                             int k = 0;
-                             while (k < b.Length - 1)
-                             {
-                                 b[k] = b[k + 1];
-                                 ai = ai + bi;
-                                 k++;
-                             }
-
-
-                         }
+                        if (arr_a == arr_b) //clean if like
+                        {
+                            int k = 0;
+                            while (k < b.Length - 1)
+                            {
+                                b[k] = b[k + 1];
+                                ai = ai + bi;
+                                k++;
+                            }
 
 
+                        }
 
 
+                    }
+                    int u = -1;
+                    while (u++ < a.Length - 1)
+                        try
+                        {
+                            File.AppendAllText("fin.txt", (ai).ToString() + " " + arr_a + '\r' + '\n');
+                        }
+                        catch (Exception)
+                        { }
 
-                     }
-                     int u = -1;
-                     while (u++ < a.Length - 1)
-                         try
-                         {
-                             File.AppendAllText("fin.txt", (ai).ToString() + " " + arr_a + '\r' + '\n');
-                         }
-                         catch (Exception)
-                         { }*/
+
 
 
                 }
-
-              
-
-
-
             }
 
         }
 
-     
+
     }
 }
