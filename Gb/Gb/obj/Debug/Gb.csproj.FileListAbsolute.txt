@@ -1,0 +1,13 @@
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\bin\Debug\Gb.exe.config
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\bin\Debug\Gb.exe
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\bin\Debug\Gb.pdb
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\bin\Debug\WebDriver.dll
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\bin\Debug\WebDriver.xml
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\obj\Debug\Gb.csprojAssemblyReference.cache
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\obj\Debug\Gb.Form1.resources
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\obj\Debug\Gb.Properties.Resources.resources
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\obj\Debug\Gb.csproj.GenerateResource.cache
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\obj\Debug\Gb.csproj.CoreCompileInputs.cache
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\obj\Debug\Gb.csproj.CopyComplete
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\obj\Debug\Gb.exe
+C:\Users\tursu\OneDrive\myProjects\GaspromBank\Gb\Gb\obj\Debug\Gb.pdb
